@@ -1,0 +1,13 @@
+{
+    "name": "leytech/leytech_latestinstagrams",
+    "type": "magento-module",
+    "description": "A simple Magento extension to get the latest posts from Instagram for a given username. It uses the Instagram API v1.",
+    "homepage": "https://github.com/leytech/Leytech_LatestInstagrams",
+    "require": {
+        "php": ">=5.4.0",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra":{
+        "magento-root-dir": "src/"
+    }
+}
