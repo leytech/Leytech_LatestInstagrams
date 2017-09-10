@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_LatestInstagrams
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2017 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
+<config>
+    <modules>
+        <Leytech_LatestInstagrams>
+            <version>1.0.0</version>
+        </Leytech_LatestInstagrams>
+    </modules>
+    <global>
+        <helpers>
+            <leytech_latestinstagrams>
+                <class>Leytech_LatestInstagrams_Helper</class>
+            </leytech_latestinstagrams>
+        </helpers>
+        <resources>
+            <leytech_latestinstagrams_setup>
+                <setup>
+                    <module>Leytech_LatestInstagrams</module>
+                    <class>Leytech_LatestInstagrams_Model_Resource_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </leytech_latestinstagrams_setup>
+        </resources>
+    </global>
+    <default>
+        <leytech_latestinstagrams>
+            <general>
+                <enabled>0</enabled>
+                <cache_lifetime>3600</cache_lifetime>
+            </general>
+        </leytech_latestinstagrams>
+    </default>
+</config>
